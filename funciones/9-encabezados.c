@@ -3,8 +3,7 @@
 
 int main() {
 //Se declaro dos variables una v y otra x para la funcion 4. 
-    int v,x;
-
+    int v,x,z;
     // Llama a las 3 funciones
     funcion1();
     funcion2(5, 2.67);
@@ -15,6 +14,10 @@ int main() {
     printf("v = %d\n", v);
     // Imprime el valor que retornó funcion4()
     printf("x = %d\n", x);
+    z = funcion5(10);
+    // Imprime el valor que retornó funcion3()
+    printf("v = %d\n", v);
+    printf("z = %d\n", z);
     return 0;
 
 }
@@ -37,11 +40,15 @@ int funcion3(int x) {
     int y = x + 2;
     return y;
 }
-
 //Para el laboratorio 4 se añadio una cuarta funcion que lo que retorna es un valor que recibió como argumento 
 //Se le resta dos al numero.
 int funcion4(int x) {
     printf("En funcion4()...\n");
     int y = x + 2;
+    return y;
+}
+int funcion5(int x) {
+    printf("En funcion5()...\n");
+    int y = x + 5;
     return y;
 }
